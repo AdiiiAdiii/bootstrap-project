@@ -1,49 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-expand-lg bg-primary" data-bs-theme="dark">
-            <div class="container">
-              <a class="navbar-brand" href="#">🏆HolyGrail Design</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link"  href="home.html">Home</a>
-                  <a class="nav-link active" aria-current="Contact" href="gallery.html">Gallery</a>
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <footer>
-        <nav class="navbar sticky-bottom navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container">
-              <a class="navbar-brand" href="#"><i class="bi bi-c-circle"></i>copyright Adrian Degeratu - 2023</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a target="_blank" class="nav-link"  href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-                  <a target="_blank" class="nav-link" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                  <a target="_blank" class="nav-link" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <header>
+    <nav class="navbar sticky-top navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">🏆HolyGrail Design</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link active" aria-current="Contact" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="mt-4">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active text-red" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Games</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-indigo" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Memes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-green//////////////////////////////////////////////////////////////////////////////////" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Links</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-5">
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 1</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 2</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 3</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 4</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 5</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 6</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 7</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 8</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 9</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 10</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 11</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 12</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 13</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 14</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 15</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/d9fovz8-405a3a15-95a4-4c5b-9abe-1587a9bdf9c9.jpg/v1/fill/w_1600,h_857,q_75,strp/autumn___last_leaves_by_grivetart_d9fovz8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU3IiwicGF0aCI6IlwvZlwvNGIwYmIwODQtMDA1Ny00OGNmLTkyYjQtNzMxOTYyOWI1NzZjXC9kOWZvdno4LTQwNWEzYTE1LTk1YTQtNGM1Yi05YWJlLTE1ODdhOWJkZjljOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WtR6WnlOtPd8Ke1sXat2E5ySVUWfFHzgNYLLgGGhKeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title 16</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores perferendis totam reprehenderit mollitia libero nihil. Cumque, praesentium natus. Eaque quibusdam, quae aut fugit aperiam mollitia unde. Eligendi, ab. Quam?</p>
+          <a href="#" class="btn btn-primary">Apasa-ma</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg-dark" style="width: 100%; bottom: 0;">
+    <div class="container col-md-4 d-flex align-items-center ">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+
+      </a>
+      <span class="mb-3 mb-md-0 text-white">© 2023 Adrian Degeratu</span>
+    </div>
+
+    <ul class="container nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a target="_blank" class="nav-link" href="https://www.facebook.com/"><i
+            class="bi bi-facebook"></i></a></li>
+      <li class="ms-3"><a target="_blank" class="nav-link" href="https://www.instagram.com/"><i
+            class="bi bi-instagram"></i></a></li>
+      <li class="ms-3"><a target="_blank" class="nav-link" href="https://www.linkedin.com/"><i
+            class="bi bi-linkedin"></i></a></li>
+    </ul>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
-</html>
+
+</html][\]

@@ -27,22 +27,60 @@
             </div>
           </nav>
     </header>
-    <footer>
-        <nav class="navbar sticky-bottom navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container">
-              <a class="navbar-brand" href="#"><i class="bi bi-c-circle"></i>copyright Adrian Degeratu - 2023</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a target="_blank" class="nav-link"  href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-                  <a target="_blank" class="nav-link" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                  <a target="_blank" class="nav-link" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-6">
+          <form>
+            <div class="row">
+                <div class="col-6">
+                    <label class="form-label" for="name">Nume</label>
+                    <input placeholder="Popescu" type="text" id="name" class="form-control">
                 </div>
-              </div>
+
+                <div class="col-6">
+                    <label class="form-label" for="last-name">Prenume</label>
+                    <input placeholder="Ion" type="text" id="last-name" class="form-control">
+                </div>
+
+
+                <div class="col-9">
+                    <label class="form-label" for="email">Email</label>
+                    <input placeholder="ion.popescu@gmail.com" type="email" id="email" class="form-control">
+                </div>
+
+                <select class="form-select mt-4 col-11" aria-label="Default select example">
+                  <option selected>Tara</option>
+                  <option value="1">Romania</option>
+                  <option value="2">Italia</option>
+                  <option value="3">Belgia</option>
+                </select>
             </div>
-          </nav>
+        </form>
+        </div>
+        <div class="col-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Trebuie sa completezi numele real</li>
+            <li class="list-group-item">Nu folosi caractere speciale</li>
+            <li class="list-group-item">Scrie corect adresa de email</li>
+            <li class="list-group-item">Alege tara in care te-ai nascut</li>
+            <li class="list-group-item">Nu impartasi aceste informatii cu nimeni</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg-dark" style="position: fixed; width: 100%; bottom: 0;">
+      <div class="container col-md-4 d-flex align-items-center ">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          
+        </a>
+        <span class="mb-3 mb-md-0 text-white">© 2023 Adrian Degeratu</span>
+      </div>
+  
+      <ul class="container nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a target="_blank" class="nav-link"  href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+        <li class="ms-3"><a target="_blank" class="nav-link" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a target="_blank" class="nav-link" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a></li>
+      </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
